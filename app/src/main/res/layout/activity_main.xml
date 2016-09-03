@@ -12,34 +12,31 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="centerInParent"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="alignParentTop/canterH"/>
+        android:text="View1"
+        android:id="@+id/textView1"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="alignParentBottom/centerH"/>
+        android:text="View2"
+        android:layout_toLeftOf="@+id/textView1"
+        android:id="@+id/textView2"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
-        android:text="left/centerV"/>
+        android:layout_centerHorizontal="true"
+        android:text="View3"
+        android:layout_toRightOf="@id/textView1"
+        android:id="@+id/textView3"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:text="right/centerV"/>
+        android:layout_centerHorizontal="true"
+        android:text="View4"
+        android:layout_below="@+id/textView1"
+        android:id="@+id/textView4"/>
 </RelativeLayout>
